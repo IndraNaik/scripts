@@ -14,7 +14,7 @@ function create_backup {
 
 	zip -r "${backup_dir}.zip" "$source_dir"
 
-	echo "Backup completed"
+	echo "Backup completed successfully"
 }
 
 create_backup $source_dir $destination_dir
