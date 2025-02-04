@@ -3,7 +3,7 @@
 <<note
 
 This script will install any package passed as argument
-./install_package.sh <arg>
+./install.sh <arg>
 note
 
 
