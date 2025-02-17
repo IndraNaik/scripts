@@ -1,29 +1,29 @@
-# Shell Scripts Collection  
-This repository contains a set of useful shell scripts for system monitoring, networking, automation, and DevOps tasks.
-
-## Table of Contents  
-- [System Monitoring Scripts](#system-monitoring-scripts)  
-- [File Backup Script](#file-backup-script)  
-- [Networking Scripts](#networking-scripts)
-- [Install](#install-script)
-- [Update-Upgrade](#update-upgrade)
-- [Usage](#usage)  
-- [License](#license)
-- [Requirements](#requirements) 
-- [Contributions](#contributions)
+# 📜 Shell Scripts Collection  
+A collection of useful shell scripts for system monitoring, networking, automation, and DevOps tasks. 🚀  
 
 ---
 
-## System Monitoring Scripts  
+## 📌 Table of Contents  
+- [🖥️ System Monitoring Scripts](#-system-monitoring-scripts)  
+- [📂 File Backup Script](#-file-backup-script)  
+- [🌐 Networking Scripts](#-networking-scripts)  
+- [📦 Install Script](#-installing-package-scripts)  
+- [🔄 Update & Upgrade](#-updating-and-upgrading-system-scripts)  
+- [📌 Usage](#-usage)  
+- [⚙️ Requirements](#-requirements)  
 
-### **1. Disk Usage Monitoring**  
-Checks the disk usage and warns if usage exceeds a set threshold.  
- 
-### **2. Memory Usage Monitoring**  
-Alerts if free memory drops below a specified threshold.   
+---
 
-### **3. Process Monitoring**  
-Checks if a specific process (like `nginx`) is running and starts it if not.  
+## 🖥️ System Monitoring Scripts  
+
+### **1️⃣ Disk Usage Monitoring**  
+🛑 Checks the disk usage and warns if usage exceeds a set threshold.  
+
+### **2️⃣ Memory Usage Monitoring**  
+⚠️ Alerts if free memory drops below a specified threshold.  
+
+### **3️⃣ Process Monitoring**  
+🔍 Checks if a specific process (like `nginx`) is running and starts it if not.  
 
 ```bash
 ./sys_monitor.sh
@@ -31,10 +31,10 @@ Checks if a specific process (like `nginx`) is running and starts it if not.
 
 ---
 
-## File Backup Script  
+## 📂 File Backup Script  
 
 ### **Backup Directory to Archive**  
-Creates a `.tar.gz` archive of the specified directory.  
+📦 Creates a `.tar.gz` archive of the specified directory.  
 
 ```bash
 ./backup.sh
@@ -42,13 +42,13 @@ Creates a `.tar.gz` archive of the specified directory.
 
 ---
 
-## Networking Scripts  
+## 🌐 Networking Scripts  
 
-### **1. Server Status Check**  
-Pings a server to check its availability.  
+### **1️⃣ Server Status Check**  
+📡 Pings a server to check its availability.  
 
-### **2. Open Port Scanner**  
-Scans open ports on a host.  
+### **2️⃣ Open Port Scanner**  
+🔎 Scans open ports on a host.  
 
 ```bash
 ./networking.sh
@@ -56,21 +56,21 @@ Scans open ports on a host.
 
 ---
 
-## Installing Package Scripts  
+## 📦 Installing Package Scripts  
 
-### ** Installing any package**    
-This script will install any package passed as argument
+### **Install Any Package**  
+💾 This script installs any package passed as an argument.  
 
 ```bash
-./install.sh
+./install.sh <package_name>
 ```
 
 ---
 
-## Updating and Upgrading System Scripts  
+## 🔄 Updating and Upgrading System Scripts  
 
-### ** Updating and Upgrading system packages**    
-This script will update and upgrade the system packages
+### **Update & Upgrade System Packages**  
+📌 This script updates and upgrades the system packages.  
 
 ```bash
 ./update.sh
@@ -78,27 +78,19 @@ This script will update and upgrade the system packages
 
 ---
 
-## Usage  
-1. **Make scripts executable:**  
+## 📌 Usage  
+1️⃣ **Make scripts executable:**  
    ```bash
    chmod +x <script_name>.sh
    ```
-2. **Run the scripts:**  
+2️⃣ **Run the scripts:**  
    ```bash
    ./<script_name>.sh
    ```
 
 ---
 
-## Requirements  
-- Bash Shell
-
-
-## License  
-This project is licensed under the MIT License.  
+## ⚙️ Requirements  
+✅ Bash Shell  
 
 ---
-
-## Contributions  
-Feel free to submit issues or pull requests for improvements!
-
