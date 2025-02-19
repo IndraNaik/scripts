@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Variables
+BACKUP_DIR="/path/to/backup"
+BACKUP_FILE="backup_$(date +"%Y%m%d%H%M%S").tar.gz"
+S3_BUCKET="your-s3-bucket-name"
+
+# Create a compressed tar archive of the source directory
+tar -czf $BACKUP_DIR/$BACKUP_FILE -C /path/to/source .
+
+# Upload the backup file to S3
+aws s3 cp $BACKUP_DIR/$BACKUP_FILE s3://$S3_BUCKET/$BACKUP_FILE
+
+# Remove the local backup file after upload
+rm $BACKUP_DIR/$BACKUP_FILE
+
+echo "Backup uploaded to S3: s3://$S3_BUCKET/$BACKUP_FILE"
